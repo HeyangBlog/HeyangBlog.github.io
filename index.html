@@ -354,8 +354,7 @@
 
       
         
-          
-            <h5 id="下载地址：MySQL-官网-下载安装包"><a href="#下载地址：MySQL-官网-下载安装包" class="headerlink" title="下载地址：MySQL 官网  下载安装包"></a>下载地址：<a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL 官网</a>  下载安装包</h5><h5 id="第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令："><a href="#第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：" class="headerlink" title="第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令："></a>第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：</h5><p>打开终端输入以下命令:</p>
+          <h5 id="下载地址：MySQL-官网-下载安装包"><a href="#下载地址：MySQL-官网-下载安装包" class="headerlink" title="下载地址：MySQL 官网  下载安装包"></a>下载地址：<a href="https://www.mysql.com/" target="_blank" rel="noopener">MySQL 官网</a>  下载安装包</h5><h5 id="第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令："><a href="#第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：" class="headerlink" title="第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令："></a>第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：</h5><p>打开终端输入以下命令:</p>
 <ul>
 <li><p>sudo rm /usr/local/mysql</p>
 </li>
@@ -372,42 +371,14 @@
 <li><p>sudo rm -rf /var/db/receipts/com.mysql.*</p>
 </li>
 </ul>
-<h5 id="此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量"><a href="#此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量" class="headerlink" title="此时我们在终端输入此时我们在命令行输入mysql -uroot -p命令会提示没有commod not found，我们还需要将mysql加入系统环境变量:"></a>此时我们在终端输入此时我们在命令行输入<code>mysql -uroot -p</code>命令会提示没有<code>commod not found</code>，我们还需要将<code>mysql</code>加入系统环境变量:</h5><ul>
-<li>cd /usr/local/mysql/bin</li>
-<li>vim ~/.bash_profile</li>
-<li>添加PATH=$PATH:/usr/local/mysql/bin</li>
-<li>保存退出（按esc,然后输入’:’,再输入wq,回车保存并退出）</li>
-<li>source ~/.bash_profile</li>
-</ul>
-<h5 id="打开终端-尝试登陆mysql-uroot-p出现以下错误："><a href="#打开终端-尝试登陆mysql-uroot-p出现以下错误：" class="headerlink" title="打开终端,尝试登陆mysql -uroot -p出现以下错误："></a>打开终端,尝试登陆mysql -uroot -p出现以下错误：</h5><h5 id="ERROR-1045-28000-Access-denied-for-user-‘username’-’localhost’-using-password-YES-问题解决办法"><a href="#ERROR-1045-28000-Access-denied-for-user-‘username’-’localhost’-using-password-YES-问题解决办法" class="headerlink" title="ERROR 1045 (28000): Access denied for user ‘username’@’localhost’ (using password: YES)问题解决办法"></a>ERROR 1045 (28000): Access denied for user ‘username’@’localhost’ (using password: YES)问题解决办法</h5><p>打开终端输入以下命令:</p>
-<ul>
-<li>sudo service mysqld stop</li>
-<li>cd /usr/local/mysql/bin</li>
-<li>sudo mysqld_safe –skip-grant-tables</li>
-</ul>
-<p>接下来打开一个新的终端输入以下命令：</p>
-<ul>
-<li>mysql</li>
-<li>use mysql;</li>
-<li><p>see Note1 below for next line.</p>
-</li>
-<li><p>UPDATE user SET password=PASSWORD(‘你的密码’) WHERE user = ‘root’;</p>
-</li>
-<li>exit;</li>
-</ul>
-<p>最后在终端执行：</p>
-<ul>
-<li>sudo service mysqld start</li>
-</ul>
-<h5 id="再次登陆mysql-uroot-p输入密码就会出现："><a href="#再次登陆mysql-uroot-p输入密码就会出现：" class="headerlink" title="再次登陆mysql -uroot -p输入密码就会出现："></a>再次登陆mysql -uroot -p输入密码就会出现：</h5><blockquote>
-<p>Welcome to the MySQL monitor.  Commands end with ; or \g.<br>Your MySQL connection id is 5<br>Server version: 5.7.21 MySQL Community Server (GPL)</p>
-<p>Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.</p>
-<p>Oracle is a registered trademark of Oracle Corporation and/or its<br>affiliates. Other names may be trademarks of their respective<br>owners.</p>
-<p>Type ‘help;’ or ‘\h’ for help. Type ‘\c’ to clear the current input statement.</p>
-<p>mysql&gt; </p>
-</blockquote>
-<h5 id="好了，MySQL的基本配置就完了。"><a href="#好了，MySQL的基本配置就完了。" class="headerlink" title="好了，MySQL的基本配置就完了。"></a>好了，MySQL的基本配置就完了。</h5>
-          
+<h5 id="此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量"><a href="#此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量" class="headerlink" title="此时我们在终端输入此时我们在命令行输入mysql -uroot -p命令会提示没有commod not found，我们还需要将mysql加入系统环境变量:"></a>此时我们在终端输入此时我们在命令行输入<code>mysql -uroot -p</code>命令会提示没有<code>commod not found</code>，我们还需要将<code>mysql</code>加入系统环境变量:</h5>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/12/安装MySQL遇到的问题解决方案/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

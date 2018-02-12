@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="A sheep without grass">
 <meta property="og:description" content="下载地址：MySQL 官网  下载安装包第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：打开终端输入以下命令:  sudo rm /usr/local/mysql  sudo rm -rf /usr/local/mysql*  sudo rm -rf /Library/StartupItems/MySQLCOM  sudo rm -rf /Library/PreferencePan">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-12T06:54:35.875Z">
+<meta property="og:updated_time" content="2018-02-12T06:56:49.943Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Max OS X系统安装MySQL遇到的一些问题.">
 <meta name="twitter:description" content="下载地址：MySQL 官网  下载安装包第一次安装成功后无法启动Mysql，最终卸载重装ok，卸载命令：打开终端输入以下命令:  sudo rm /usr/local/mysql  sudo rm -rf /usr/local/mysql*  sudo rm -rf /Library/StartupItems/MySQLCOM  sudo rm -rf /Library/PreferencePan">
@@ -369,7 +369,8 @@
 <li><p>sudo rm -rf /var/db/receipts/com.mysql.*</p>
 </li>
 </ul>
-<h5 id="此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量"><a href="#此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量" class="headerlink" title="此时我们在终端输入此时我们在命令行输入mysql -uroot -p命令会提示没有commod not found，我们还需要将mysql加入系统环境变量:"></a>此时我们在终端输入此时我们在命令行输入<code>mysql -uroot -p</code>命令会提示没有<code>commod not found</code>，我们还需要将<code>mysql</code>加入系统环境变量:</h5><ul>
+<h5 id="此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量"><a href="#此时我们在终端输入此时我们在命令行输入mysql-uroot-p命令会提示没有commod-not-found，我们还需要将mysql加入系统环境变量" class="headerlink" title="此时我们在终端输入此时我们在命令行输入mysql -uroot -p命令会提示没有commod not found，我们还需要将mysql加入系统环境变量:"></a>此时我们在终端输入此时我们在命令行输入<code>mysql -uroot -p</code>命令会提示没有<code>commod not found</code>，我们还需要将<code>mysql</code>加入系统环境变量:</h5><a id="more"></a>
+<ul>
 <li>cd /usr/local/mysql/bin</li>
 <li>vim ~/.bash_profile</li>
 <li>添加PATH=$PATH:/usr/local/mysql/bin</li>
