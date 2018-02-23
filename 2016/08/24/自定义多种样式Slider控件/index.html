@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="截屏," />
+  <meta name="keywords" content="Slider," />
 
 
 
@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="在截图分享的过程中遇到了如下症状:  分享之前视图的layer显示正常,当调用截图方法后出现了layer失效的问题!这就有点打脑壳了哟,就好比进去之前还穿着衣服,出来后衣服就没了😂😂😂,如下图:">
-<meta name="keywords" content="截屏">
+<meta name="description" content="由于UISlider控件功能太单一,样式也满足不了所需,自己写了一个相对灵活,可以随意组合的Slider控件,先看一下具体效果:">
+<meta name="keywords" content="Slider">
 <meta property="og:type" content="article">
-<meta property="og:title" content="屏幕截图及遇到的问题">
-<meta property="og:url" content="http://yoursite.com/2015/07/02/屏幕截屏及遇到的问题/index.html">
+<meta property="og:title" content="自定义多种样式Slider控件">
+<meta property="og:url" content="http://yoursite.com/2016/08/24/自定义多种样式Slider控件/index.html">
 <meta property="og:site_name" content="A sheep without grass">
-<meta property="og:description" content="在截图分享的过程中遇到了如下症状:  分享之前视图的layer显示正常,当调用截图方法后出现了layer失效的问题!这就有点打脑壳了哟,就好比进去之前还穿着衣服,出来后衣服就没了😂😂😂,如下图:">
+<meta property="og:description" content="由于UISlider控件功能太单一,样式也满足不了所需,自己写了一个相对灵活,可以随意组合的Slider控件,先看一下具体效果:">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://orxgohz2k.bkt.clouddn.com/Graphics.png">
-<meta property="og:updated_time" content="2017-06-28T03:47:58.000Z">
+<meta property="og:image" content="http://orxgohz2k.bkt.clouddn.com/HYSlider.gif">
+<meta property="og:updated_time" content="2018-02-23T05:48:08.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="屏幕截图及遇到的问题">
-<meta name="twitter:description" content="在截图分享的过程中遇到了如下症状:  分享之前视图的layer显示正常,当调用截图方法后出现了layer失效的问题!这就有点打脑壳了哟,就好比进去之前还穿着衣服,出来后衣服就没了😂😂😂,如下图:">
-<meta name="twitter:image" content="http://orxgohz2k.bkt.clouddn.com/Graphics.png">
+<meta name="twitter:title" content="自定义多种样式Slider控件">
+<meta name="twitter:description" content="由于UISlider控件功能太单一,样式也满足不了所需,自己写了一个相对灵活,可以随意组合的Slider控件,先看一下具体效果:">
+<meta name="twitter:image" content="http://orxgohz2k.bkt.clouddn.com/HYSlider.gif">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2015/07/02/屏幕截屏及遇到的问题/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/24/自定义多种样式Slider控件/"/>
 
 
 
 
 
-  <title>屏幕截图及遇到的问题 | A sheep without grass</title>
+  <title>自定义多种样式Slider控件 | A sheep without grass</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/02/屏幕截屏及遇到的问题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/24/自定义多种样式Slider控件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hy">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">屏幕截图及遇到的问题</h1>
+          <h1 class="post-title" itemprop="name headline">自定义多种样式Slider控件</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-02T10:59:20+08:00">
-                2015-07-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-24T10:59:20+08:00">
+                2016-08-24
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/百万个为什么/" itemprop="url" rel="index">
-                    <span itemprop="name">百万个为什么</span>
+                  <a href="/categories/iOSDev/" itemprop="url" rel="index">
+                    <span itemprop="name">iOSDev</span>
                   </a>
                 </span>
 
@@ -354,25 +354,15 @@
       
 
       
-        <p>在截图分享的过程中遇到了如下症状:</p>
-<blockquote>
-<p>分享之前视图的layer显示正常,当调用截图方法后出现了layer失效的问题!这就有点打脑壳了哟,就好比进去之前还穿着衣服,出来后衣服就没了😂😂😂,如下图:</p>
-</blockquote>
-<p><img src="http://orxgohz2k.bkt.clouddn.com/Graphics.png" alt=""><br><a id="more"></a></p>
-<h4 id="常见的截图方式有以下几种"><a href="#常见的截图方式有以下几种" class="headerlink" title="常见的截图方式有以下几种:"></a>常见的截图方式有以下几种:</h4><p>1.非retina屏幕截图方式:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UIGraphicsBeginImageContext</span>(yourView.frame.size);</span><br><span class="line">    [yourView.layer renderInContext:<span class="built_in">UIGraphicsGetCurrentContext</span>()];</span><br><span class="line">    <span class="built_in">UIImage</span> *image = <span class="built_in">UIGraphicsGetImageFromCurrentImageContext</span>();</span><br><span class="line">    <span class="built_in">UIGraphicsEndImageContext</span>();</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>缺点:不支持retina屏幕,如果在retina屏幕上使用,截图会很模糊,有像素风的style…</p>
-</blockquote>
-<p>2.retina屏幕截图方式(iPhone 4 之后):<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UIGraphicsBeginImageContextWithOptions</span>(<span class="built_in">CGSizeMake</span>(view.frame.size.width, view.frame.size.height), <span class="literal">NO</span>, [[<span class="built_in">UIScreen</span> mainScreen] scale]);</span><br><span class="line">    [view.layer renderInContext:<span class="built_in">UIGraphicsGetCurrentContext</span>()];</span><br><span class="line">    <span class="built_in">UIImage</span> * image = <span class="built_in">UIGraphicsGetImageFromCurrentImageContext</span>();</span><br><span class="line">    <span class="built_in">UIGraphicsEndImageContext</span>();</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>缺点:无法自由的控制截图区域,还会出现我文章开头所描述的问题</p>
-</blockquote>
-<hr>
-<h4 id="layer失效问题解决"><a href="#layer失效问题解决" class="headerlink" title="layer失效问题解决:"></a>layer失效问题解决:</h4><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[view.layer renderInContext:<span class="built_in">UIGraphicsGetCurrentContext</span>()];</span><br></pre></td></tr></table></figure>
-<p>替换为:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[view drawViewHierarchyInRect:view.bounds afterScreenUpdates:<span class="literal">NO</span>];</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>自<strong>iOS7</strong>开始，<code>UIView</code>类提供了一个方法-<code>drawViewHierarchyInRect:afterScreenUpdates:</code>，它允许你截取一个<code>UIView</code>或者其子类中的内容，并且以位图的形式（<code>bitmap</code>）保存到<code>UIImage</code>中，包括<code>UIKit</code>，<code>Quartz</code>，<code>OpenGL ES</code>，<code>SpriteKit</code>等等。在<code>iOS6</code>以及更早的版本中，怎样对<code>UIView</code>截屏从本质来说取决于绘制技术（<code>drawing technique</code>）。</p>
-<p>来自<a href="https://developer.apple.com/library/content/qa/qa1817/_index.html#//apple_ref/doc/uid/DTS40014134" target="_blank" rel="noopener">苹果问答中心</a>的回复。</p>
+        <p>由于UISlider控件功能太单一,样式也满足不了所需,自己写了一个相对灵活,可以随意组合的Slider控件,先看一下具体效果:<br><img src="http://orxgohz2k.bkt.clouddn.com/HYSlider.gif" alt=""><br><a id="more"></a></p>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用:"></a>如何使用:</h3><h4 id="初始化一个HYSlider控件-和普通控件一样的创建方式"><a href="#初始化一个HYSlider控件-和普通控件一样的创建方式" class="headerlink" title="初始化一个HYSlider控件,和普通控件一样的创建方式:"></a>初始化一个HYSlider控件,和普通控件一样的创建方式:</h4><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HYSlider *slider = [[HYSlider alloc]initWithFrame:<span class="built_in">CGRectMake</span>(<span class="number">20</span>, <span class="number">100</span>, <span class="keyword">self</span>.view.frame.size.width - <span class="number">40</span>, <span class="number">10</span>)];</span><br></pre></td></tr></table></figure>
+<h4 id="功能讲解"><a href="#功能讲解" class="headerlink" title="功能讲解:"></a>功能讲解:</h4><p>1.滑动方式(长按/触摸滑动):<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 长按滑动*/</span></span><br><span class="line">slider.sliderMoveType = HYSliderLongPressGRMove</span><br><span class="line"> <span class="comment">/* 触摸滑动*/</span></span><br><span class="line">slider.sliderMoveType = HYSliderPanGRMove;</span><br></pre></td></tr></table></figure></p>
+<p>2.颜色设置:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 选中颜色 */</span></span><br><span class="line">slider.currentValueColor = [<span class="built_in">UIColor</span> redColor];</span><br><span class="line"><span class="comment">/* 文字显示颜色 */</span></span><br><span class="line">slider.showTextColor = [<span class="built_in">UIColor</span> redColor];</span><br><span class="line"><span class="comment">/* 圆形控件颜色 */</span></span><br><span class="line">slider.touchViewColor = [<span class="built_in">UIColor</span> redColor];</span><br></pre></td></tr></table></figure></p>
+<p>3.数值设置:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 最大值 */</span></span><br><span class="line">slider.maxValue = <span class="number">255</span>;</span><br><span class="line"> <span class="comment">/* 默认初始值 */</span></span><br><span class="line">slider.currentSliderValue = <span class="number">200</span>;</span><br></pre></td></tr></table></figure></p>
+<p>4.样式设置:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 是否显示圆形控件 */</span></span><br><span class="line">slider.showTouchView = <span class="literal">YES</span>;</span><br><span class="line"><span class="comment">/* 是否显示浮标 */</span></span><br><span class="line">slider.showScrollTextView = <span class="literal">YES</span>;</span><br></pre></td></tr></table></figure></p>
+<p>HYSlider基本上可以满足日常所有slider需求,也可以根据需要自行修改源代码来实现想要的功能或样式.</p>
+<h3 id="代码下载"><a href="#代码下载" class="headerlink" title="代码下载:"></a>代码下载:</h3><blockquote>
+<p>更多使用方式详见源代码:<br>Github代码下载地址:<a href="https://github.com/BarcaNeymar/HYSlider-master" target="_blank" rel="noopener">HYSlider-master</a><br>CocoaChina代码下载地址:<a href="http://code.cocoachina.com/view/133902" target="_blank" rel="noopener">个性化定制Slider</a></p>
 </blockquote>
 
       
@@ -391,7 +381,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/截屏/" rel="tag"># 截屏</a>
+            <a href="/tags/Slider/" rel="tag"># Slider</a>
           
         </div>
       
@@ -404,8 +394,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/06/26/获取webView所有图片并添加点击事件/" rel="next" title="获取webView所有图片并添加点击事件">
-                <i class="fa fa-chevron-left"></i> 获取webView所有图片并添加点击事件
+              <a href="/2016/07/02/屏幕截屏及遇到的问题/" rel="next" title="屏幕截图及遇到的问题">
+                <i class="fa fa-chevron-left"></i> 屏幕截图及遇到的问题
               </a>
             
           </div>
@@ -414,8 +404,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/24/自定义多种样式Slider控件/" rel="prev" title="自定义多种样式Slider控件">
-                自定义多种样式Slider控件 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/01/One/" rel="prev" title="这世界是个好地方，值得为之奋斗">
+                这世界是个好地方，值得为之奋斗 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -552,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的截图方式有以下几种"><span class="nav-number">1.</span> <span class="nav-text">常见的截图方式有以下几种:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#layer失效问题解决"><span class="nav-number">2.</span> <span class="nav-text">layer失效问题解决:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何使用"><span class="nav-number">1.</span> <span class="nav-text">如何使用:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化一个HYSlider控件-和普通控件一样的创建方式"><span class="nav-number">1.1.</span> <span class="nav-text">初始化一个HYSlider控件,和普通控件一样的创建方式:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能讲解"><span class="nav-number">1.2.</span> <span class="nav-text">功能讲解:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码下载"><span class="nav-number">2.</span> <span class="nav-text">代码下载:</span></a></li></ol></div>
             
 
           </div>
